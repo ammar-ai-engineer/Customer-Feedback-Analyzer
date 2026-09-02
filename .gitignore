@@ -1,0 +1,18 @@
+# Environment variables - your real Gemini key lives here, never commit this
+.env
+
+# Virtual environment - requirements.txt is what actually recreates this
+venv/
+
+# Python cache files - auto-generated every time you run any .py file
+__pycache__/
+*.pyc
+
+# The database - seed_data.py rebuilds this fresh, so no need to track it
+feedback.db
+
+# Editor settings (Cursor/VS Code)
+.vscode/
+
+# Windows junk file
+Thumbs.db
