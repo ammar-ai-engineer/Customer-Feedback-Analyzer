@@ -38,17 +38,19 @@ This mirrors how real production AI systems are often built: cheap, fast, local 
 
 ## Project Structure
 
+```text
 customer-feedback-analyzer/
-├── app.py # Gradio UI - run this to start the app
-├── config.py # All settings: business name, categories, AI provider
-├── database.py # SQLite storage for analyzed reviews
-├── sentiment_pipeline.py # Hugging Face pipelines: sentiment + category
-├── ai_client.py # Gemini / Ollama connection switcher
-├── summary_generator.py # Builds the prompt & generates the summary
-├── seed_data.py # Sample reviews to populate the demo
+├── app.py                  # Gradio UI - run this to start the app
+├── config.py               # All settings: business name, categories, AI provider
+├── database.py             # SQLite storage for analyzed reviews
+├── sentiment_pipeline.py   # Hugging Face pipelines: sentiment + category
+├── ai_client.py            # Gemini / Ollama connection switcher
+├── summary_generator.py    # Builds the prompt & generates the summary
+├── seed_data.py            # Sample reviews to populate the demo
 ├── requirements.txt
 ├── .gitignore
-└── .env # Your API key (not committed to git)
+└── .env                    # Your API key (not committed to git)
+```
 
 
 
@@ -82,7 +84,9 @@ python -m pip install -r requirements.txt
 
 Create a file named `.env` in the project root:
 
+```env
 GOOGLE_API_KEY=your_gemini_api_key_here
+```
 
 
 ### Running the App
